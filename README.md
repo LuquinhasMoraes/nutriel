@@ -4,7 +4,7 @@ Aplicativo feito para nutricionista e seu paciente.
 
 # Funcionalidades
 
- Login com Nutricionista
+* Login com Nutricionista
 * Login com paciente
 * Cadastro de novos pacientes
 * Cadastro de Alimentos
