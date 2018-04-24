@@ -1,0 +1,99 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{chat[0].CliNom}}">
+<ion-nav-bar class="bar-royal">
+  <ion-nav-back-button></ion-nav-back-button>
+</ion-nav-bar>
+  <ion-content class="padding">
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="{{chat[0].CliImg}}">
+        <h2>{{chat[0].CliNom}}</h2>
+        <p>{{chat[0].CliEma}}</p>
+      </div>
+
+      <div class="item item-body">
+        <div class="row">
+       
+          <div class="col">
+            
+              <b>CPF:</b> {{chat[0].CliCpf}}
+               
+          </div>
+        
+       
+        </div>
+
+        <div class="row">
+       
+          <div class="col">
+            <b>Telefone:</b> {{chat[0].CliTel}}
+          </div>
+       
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <b>Nascimento:</b> {{chat[0].CliDatNas}}
+          </div>
+        </div>
+
+        <div class="row">
+       
+          <div class="col col-50">
+            <b>Altura:</b> {{chat[0].CliAlt}}
+          </div>
+
+          <div class="col">
+            <b>Diabetes:</b> {{chat[0].CliDia}}
+          </div>
+       
+        </div>
+
+        <div class="row">
+       
+          <div class="col col-50">
+            <b>Peso:</b> {{chat[0].CliPes}}
+          </div>
+
+          <div class="col">
+            <b>Colesterol:</b> {{chat[0].CliCol}}
+          </div>
+       
+        </div>
+
+        <div class="row">
+       
+          <div class="col col-50">
+            <b>Quadril:</b> {{chat[0].CliQua}}
+          </div>
+
+          <div class="col">
+            <b>Busto:</b> {{chat[0].CliBus}}
+          </div>
+       
+        </div>
+
+        <p>
+          
+        </p>
+        <p>
+          <a href="#/tab/chats/diet/{{chat[0].CliCod}}" class="subdued"><i class="ion-plus"></i> Add Itens na Dieta </a>
+          <a href="#/tab/chats/diet/itens/{{chat[0].CliCod}}" class="subdued" style="text-align: right; margin-right: 5px"><i class="ion-fork"></i> Ver Dieta </a>
+        </p>
+      </div>
+
+    </div>
+
+  </ion-content>
+
+  <button class="button button-float" ng-click="openModalEdit()">
+    <i class="icon ion-edit"></i>
+  </button>
+
+</ion-view>

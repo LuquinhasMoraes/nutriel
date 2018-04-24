@@ -1,0 +1,34 @@
+<ion-view view-title="Alimentos">
+  <ion-nav-bar class="bar-royal">
+  <ion-nav-back-button></ion-nav-back-button>
+</ion-nav-bar>
+  <ion-content>
+  <!--   <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+    </ion-list> -->
+	
+	<ion-list >
+      
+      <ion-item class="item-remove-animate item-icon-right" ng-click="getAlimentoById(alimento.AliCod)" ng-repeat="alimento in dataAlimentos" type="item-text-wrap" href="#/tab/account/edit/{{alimento.AliCod}}">
+        
+        <h2>{{alimento.AliDes}}</h2>
+        <p>Calorias/100g: {{alimento.AliKca}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(alimento.AliCod)">
+          Deletar
+        </ion-option-button>
+
+      </ion-item>
+
+    </ion-list>
+
+  </ion-content>
+
+  <button class="button button-float" ng-click="openModalAlimentos()">
+    <i class="icon ion-plus"></i>
+  </button>
+
+</ion-view>

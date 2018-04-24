@@ -1,0 +1,34 @@
+<ion-view view-title="Itens da Dieta">
+<ion-nav-bar class="bar-royal">
+  <ion-nav-back-button></ion-nav-back-button>
+</ion-nav-bar>
+<!-- <div class="bar bar-subheader">
+  <h2 class="title">Sub Header</h2>
+</div> -->
+
+  <ion-content style="margin-top: -2px">
+
+
+    <ion-list>
+      <ion-item class="item item-remove-animate item-icon-left" ng-repeat="item in itens track by $index" type="item-text-wrap">
+        
+        <i class="icon ion-fork"></i>
+        <h2>{{item.AliDes}}</h2>
+        <p>Consumir {{item.DieIteQtd}}g às {{item.DieIteHor | date : "H:mm"}}</p>
+        <p>Obs.: {{item.DieIteObs}}</p>
+        
+        <ion-option-button class="button-assertive" ng-click="remove(item.DieIteCod)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+
+
+  </ion-content>
+
+<!--   <button class="button button-float" ng-click="openModalClientes()">
+    <i class="icon ion-plus"></i>
+  </button> -->
+
+
+</ion-view>

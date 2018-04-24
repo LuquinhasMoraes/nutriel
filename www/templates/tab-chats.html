@@ -1,0 +1,40 @@
+<ion-view view-title="Clientes">
+<ion-nav-bar class="bar-royal">
+  <ion-nav-back-button></ion-nav-back-button>
+</ion-nav-bar>
+<div class="bar bar-subheader">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="Procurando alguém?" style="background: #eee; width: 100%" ng-model="clientes.search">
+      </label>
+      <button class="button button-small">
+      <i class="ion-android-search"></i>
+    </button>
+
+    </div>
+  <ion-content style="margin-top: 47px">
+
+
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats | filter:clientes.search" type="item-text-wrap" href="#/tab/chats/{{chat.CliCod}}">
+        <img ng-src="{{chat.CliImg}}">
+        <h2>{{chat.CliNom}}</h2>
+        <p>{{chat.CliEma}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat.CliCod)">
+          Deletar
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+
+   
+
+  </ion-content>
+
+
+  <button class="button button-float" ng-click="openModalClientes()">
+        <i class="icon ion-plus"></i>
+      </button>
+
+
+</ion-view>

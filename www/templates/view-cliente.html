@@ -1,0 +1,25 @@
+<ion-view view-title="Minha Dieta">
+<ion-nav-bar class="bar-royal">
+</ion-nav-bar>
+<ion-content>
+  
+  
+  <ion-list >
+      <ion-item class="item item-icon-left" ng-repeat="item in itens track by $index" type="item-text-wrap">
+        
+        <i class="icon ion-fork"></i>
+        <h2>{{item.AliDes}}</h2>
+        <p>Consumir {{item.DieIteQtd}}g às {{item.DieIteHor}}</p>
+        <p>Obs.: {{item.DieIteObs}}</p>
+        
+      </ion-item>
+  </ion-list>
+
+  <div class="card" ng-show="!itens">
+      <div class="item item-text-wrap">
+        Desculpe, mas seu nutricionista ainda não adicionou sua dieta.
+      </div>
+  </div>
+  
+</ion-content>
+</ion-view>

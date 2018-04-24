@@ -1,0 +1,60 @@
+  <ion-modal-view>
+    <ion-header-bar class="bar-royal">
+      <h1 class="title">Itens da Dieta</h1>
+    </ion-header-bar>
+   <ion-content>
+    <div class="bar bar-header bar-stable">
+      <div class="col-25">
+        <h3 class="title">{{chat[0].CliNom}}</h3>
+      </div>
+    </div>
+    <div class="bar bar-subheader item-input-inset">
+      <a href="#/tab/chats/diet/{{chat[0].CliCod}}" ng-click="closeModalItens()" class="button ion-plus button-block button-stable"> Adicionar Mais </a>
+    </div>
+
+    <br>
+    
+
+<!--     <div ng-show="!ItemComanda" style="margin-top: 100px;">
+      <center>
+        <ion-spinner icon="ios"></ion-spinner>
+      </center>
+    </div> -->
+    
+    <div style="height: 20px;"></div>
+
+    <!-- <ion-list ng-show="!spinnerItensComanda"> -->
+    <ion-list>
+
+        <li class="item item-button-right item-light" ng-repeat="item in Itens track by $index" class="item-stable">
+          
+          <h2>{{item.AliDes}}</h2>
+          <p>Refeição às: {{item.horario | date: "HH:mm"}}<p>
+          <p>Consumir: {{item.qtd}}g</p>
+          <p>Obs: {{item.obs}}</p>
+          
+          <button style="margin-top: 32px; z-index: 9999" class="button-assertive button" ng-click="removeItemDieta($index)"><i class="icon ion-trash-b"></i></button>
+
+        </li>
+ 
+
+<!--       <ion-checkbox ng-model="Item[$index]" ng-click="setFlagPrint(CmdItens, $index, Item[$index])" ng-repeat="ItemComanda in CmdItens track by $index">
+        <h2>{{ItemComanda.ProDesSim}}</h2>
+        <p>{{ItemComanda.CmpProDes | uppercase}}</p>
+        <p>Qtd: {{ItemComanda.CmpProQtd}} X {{ItemComanda.CmpProPre}}</p>  
+        <p>Total: {{ItemComanda.CmpProTot | currency: 'R$ ':'2'}}</p>
+      </ion-checkbox> -->
+    </ion-list>
+
+    <div style="height: 44px;"></div>
+
+  </ion-content>
+
+  <div class="bar bar-footer bar-stable">
+    
+    <a  ng-click="cancelItensDieta()" class="button ion-close  button-assertive"> Cancelar </a>
+    <a  ng-click="createDieta()" class="button ion-checkmark button-royal" style="width: 220px">
+    Concluir </a>
+  </div>
+
+  </ion-modal-view>

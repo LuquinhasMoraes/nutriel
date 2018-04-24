@@ -1,0 +1,42 @@
+<ion-view view-title="Autenticação">
+<ion-nav-bar class="bar-royal">
+</ion-nav-bar>
+<ion-content>
+	<center>
+		<img src="img/logo.jpeg" id="logotipo" alt="" width="150" style="margin-top: 10px;">
+	</center>
+
+	<div class="col">
+		<div class="list" style="margin-top: 10px;">
+		  <label class="item item-input">
+		    <span class="input-label">Usuário:</span>
+		    <input type="text" ng-model="login.usuario">
+		  </label>
+		  <label class="item item-input">
+		    <span class="input-label">Senha: </span>
+		    <input type="password" ng-model="login.senha">
+		  </label>
+		  <li class="item item-toggle">
+		     Entrar como Nutricionista
+		     <label class="toggle toggle-balanced">
+		       <input type="checkbox" ng-model="login.tipo">
+		       <div class="track">
+		         <div class="handle"></div>
+		       </div>
+		     </label>
+		  </li>
+		</div>
+
+		<a ng-click="logar()" ng-disabled="login.usuario.length < 1 || login.senha.length < 1" class="button ion-log-in button-royal button-block"> Entrar </a>
+		<!-- <a href="" ng-click="deleteAll()" class="button ion-close button-assertive button-block"> Deletar Banco </a> -->
+	</div>
+
+	<center>
+		<p style="color: #909090; font-size: 10px;">© 2017 - Todos os direitos reservados </p>
+			<p>
+				<a style="text-decoration: none; font-size: 20px; margin-top: 15px;" href="#/ajuda" class=""><i class="ion-help-circled"></i> </a>		
+			</p>
+		
+	</center>
+</ion-content>
+</ion-view>

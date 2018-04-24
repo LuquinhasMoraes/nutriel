@@ -1,0 +1,182 @@
+<ion-modal-view>
+	<ion-header-bar class="bar-royal">
+	  <h1 class="title">Editar Clientes</h1>
+	</ion-header-bar>
+	<ion-content>
+
+	<div class="row">
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Usuário:</span>
+			    <input type="text" ng-model="chat[0].CliLog">
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input item-select">
+			    <span class="input-label">Senha: </span>
+			    <input type="password" ng-model="chat[0].CliSen">
+			  </label>
+
+			</div>
+	  	</div>
+	  </div>
+
+	  <div class="row">
+	  	
+	  	<div class="col">
+	  		
+			<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Nome:</span>
+			    <input type="text" ng-model="chat[0].CliNom" >
+			  </label>
+			  
+			  <label class="item item-input">
+			    <span class="input-label">CPF:</span>
+			    <input type="text" ng-model="chat[0].CliCpf">
+			  </label>
+
+			  <label class="item item-input item-select">
+			    <span class="input-label">Gênero: </span>
+			    <select ng-model="clientes.genero">
+
+				  <option value="m" ng-selected="chat[0].CliGen == 'm'">Masculino</option>
+				  <option value="f" ng-selected="chat[0].CliGen == 'f'">Feminino</option>
+				</select>
+			  </label>
+
+			  <label class="item item-input">
+			    <span class="input-label">E-mail:</span>
+			    <input type="email" ng-model="chat[0].CliEma">
+			  </label>
+
+			</div>
+
+	  	</div>
+
+	  </div>
+
+	  <div class="row">
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Fone:</span>
+			    <input type="text" ng-model="chat[0].CliTel">
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Nasc:</span>
+			    <input type="text" class="date" ng-model="chat[0].CliDatNas">
+			  </label>
+			</div>
+	  	</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Altura:</span>
+			    <input type="text" ng-model="chat[0].CliAlt">
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input item-select">
+			    <span class="input-label">Diabetes: </span>
+			    <select ng-model="chat[0].CliDia">
+				  <option selected>Não</option>
+				  <option >Sim</option>
+				</select>
+			  </label>
+
+			</div>
+	  	</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label" >Peso:</span>
+			    <input type="text" ng-model="chat[0].CliPes">
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input item-select">
+			    <span class="input-label">Colesterol: </span>
+			    <select ng-model="chat[0].CliCol">
+				  <option selected>Não</option>
+				  <option >Sim</option>
+				</select>
+			  </label>
+
+			</div>
+	  	</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Quadril:</span>
+			    <input type="text" ng-model="chat[0].CliQua">
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input ">
+			    <span class="input-label">Busto: </span>
+			    <input type="text" ng-model="chat[0].CliBus">
+			  </label>
+
+			</div>
+	  	</div>
+	  </div>
+
+	  <div class="row">
+	  	
+	  	<div class="col">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Cintura:</span>
+			    <input type="text" ng-model="chat[0].CliCin">
+			  </label>
+			</div>
+
+			<button class="button button-full button-balanced" ng-click="editCliente()">
+			  Salvar
+			</button>
+
+			<button class="button button-full button-stable" ng-click="closeModal()">
+			  Cancelar
+			</button>
+
+	  	</div>
+	
+	  </div>
+
+	</ion-content>
+</ion-modal-view>

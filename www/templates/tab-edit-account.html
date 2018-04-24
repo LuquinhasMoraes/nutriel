@@ -1,0 +1,154 @@
+<ion-view view-title="Alimentos">
+  <ion-nav-bar class="bar-royal">
+  <ion-nav-back-button></ion-nav-back-button>
+</ion-nav-bar>
+  <ion-content>
+  
+    <div class="row">
+      
+      <div class="col">
+        
+      <div class="list">
+        
+        <label class="item item-input">
+          <span class="input-label">Alimento: </span>
+          <input type="text" ng-model="alimento[0].AliDes">
+        </label>
+        
+        <label class="item item-input item-select">
+          <span class="input-label">Tipo: </span>
+          <select ng-model="alimento[0].AliTip">
+          <option selected>Verdura</option>
+          <option>Legume</option>
+          <option>Fruta</option>
+          <option>Grão</option>
+          <option>Massa</option>
+        </select>
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Kcal:</span>
+          <input type="text" ng-model="alimento[0].AliKca">
+        </label>
+
+
+        <label class="item item-input">
+          <span class="input-label">Proteinas:</span>
+          <input type="text" ng-model="alimento[0].AliPro">
+        </label>
+
+      </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col col-50">
+        <div class="list">
+        
+        <label class="item item-input">
+          <span class="input-label">Gordura:</span>
+          <input type="text" ng-model="alimento[0].AliGor">
+        </label>
+      </div>
+      </div>
+      <div class="col col-50">
+        <div class="list">
+        
+        <label class="item item-input">
+          <span class="input-label">Colesterol:</span>
+          <input type="text" ng-model="alimento[0].AliCol">
+        </label>
+      </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-50">
+        <div class="list">
+        
+        <label class="item item-input">
+          <span class="input-label">Fibra:</span>
+          <input type="text" ng-model="alimento[0].AliFib">
+        </label>
+      </div>
+      </div>
+      <div class="col col-50">
+        <div class="list">
+        
+        <label class="item item-input">
+          <span class="input-label">Água: </span>
+          <input type="text" ng-model="alimento[0].AliAgu">
+        </label>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-50">
+        <div class="list">
+        
+        <label class="item item-input">
+          <span class="input-label">Vitamina D:</span>
+          <input type="text" ng-model="alimento[0].AliVitD">
+        </label>
+      </div>
+      </div>
+      <div class="col col-50">
+        <div class="list">
+        
+        <label class="item item-input">
+          <span class="input-label">Vitamina C: </span>
+          <input type="text" ng-model="alimento[0].AliVitC">
+        </label>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-50">
+        <div class="list">
+        
+        <label class="item item-input">
+          <span class="input-label">B6:</span>
+          <input type="text" ng-model="alimento[0].AliVitB6">
+        </label>
+      </div>
+      </div>
+      <div class="col col-50">
+        <div class="list">
+        
+        <label class="item item-input">
+          <span class="input-label">B12: </span>
+          <input type="text" ng-model="alimento[0].AliVitB12">
+        </label>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="list">
+        
+          <label class="item item-input">
+            <span class="input-label">Total HC:</span>
+            <input type="text" ng-model="alimento[0].AliTotHc">
+          </label>
+        </div>
+  
+        <button class="button button-full button-royal" ng-click="editAlimento()">
+          Salvar
+        </button>
+      
+      </div>
+
+    </div>
+
+  </ion-content>
+
+
+</ion-view>

@@ -1,0 +1,158 @@
+<ion-modal-view>
+	<ion-header-bar class="bar-royal">
+	  <h1 class="title">Cadastro de alimentoss</h1>
+	</ion-header-bar>
+
+	<ion-content>
+	  
+	  <div class="row">
+	  	
+	  	<div class="col">
+	  		
+			<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">alimentos:</span>
+			    <input type="text" ng-model="alimentos.descricao">
+			  </label>
+			  
+			  <label class="item item-input item-select">
+			    <span class="input-label">Tipo: </span>
+			    <select ng-model="alimentos.tipo">
+				  <option selected>Verdura</option>
+				  <option>Legume</option>
+				  <option>Fruta</option>
+				  <option>Grão</option>
+				  <option>Massa</option>
+				</select>
+			  </label>
+
+			  <label class="item item-input">
+			    <span class="input-label">Kcal:</span>
+			    <input type="text" ng-model="alimentos.kcal">
+			  </label>
+
+
+			  <label class="item item-input">
+			    <span class="input-label">Proteinas:</span>
+			    <input type="text" ng-model="alimentos.proteinas">
+			  </label>
+
+			</div>
+
+	  	</div>
+
+	  </div>
+
+	  <div class="row">
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Gordura:</span>
+			    <input type="text" ng-model="alimentos.gorduras">
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label" >Colesterol:</span>
+			    <input type="text" ng-model="alimentos.colesterol">
+			  </label>
+			</div>
+	  	</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Fibra:</span>
+			    <input type="text" ng-model="alimentos.fibra">
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Água: </span>
+			    <input type="text" ng-model="alimentos.agua">
+			  </label>
+
+			</div>
+	  	</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Vitamina D:</span>
+			    <input type="text" ng-model="alimentos.vitD">
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">Vitamina C: </span>
+			    <input type="text" ng-model="alimentos.vitC">
+			  </label>
+
+			</div>
+	  	</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">B6:</span>
+			    <input type="text" ng-model="alimentos.vitB6">
+			  </label>
+			</div>
+	  	</div>
+	  	<div class="col col-50">
+	  		<div class="list">
+			  
+			  <label class="item item-input">
+			    <span class="input-label">B12: </span>
+			    <input type="text" ng-model="alimentos.vitB12">
+			  </label>
+
+			</div>
+	  	</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col">
+	  		<div class="list">
+			  
+			  	<label class="item item-input">
+				    <span class="input-label">Total HC:</span>
+				    <input type="text" ng-model="alimentos.totHc">
+				  </label>
+				</div>
+	
+
+				<button class="button button-full button-balanced" ng-click="salvarAlimento()">
+				  Salvar e Novo
+				</button>
+
+				<button class="button button-full button-stable" ng-click="closeModal()">
+				  Voltar
+				</button>
+	  	
+	  	</div>
+
+	  </div>
+
+	</ion-content>
+</ion-modal-view>
