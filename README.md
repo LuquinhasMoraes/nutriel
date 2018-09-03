@@ -13,7 +13,7 @@ Aplicativo feito para nutricionista e seu paciente.
 * Excluir alimentos da dieta
 * Excluir alimentos
 * Excluir pacientes
-* Vizualização da dieta
+* Vizualizar da dieta
 
 # Como testar
 
